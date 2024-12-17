@@ -125,6 +125,11 @@ Cierre del Documento:
 
 
 ##ENVIO DE CORREO
+![image](https://github.com/user-attachments/assets/8f12fcc2-2174-45ea-b12d-24f42b960d8e)
+![image](https://github.com/user-attachments/assets/16a51b47-43af-42e2-abab-4aa52ecc1ce8)
+![image](https://github.com/user-attachments/assets/0a952a4c-799a-4b23-9cd7-b4cb96695554)
+
+
 
 Conclusión
 Este proyecto ha logrado implementar un sistema de cajero automático funcional que cumple con los objetivos establecidos, proporcionando a los usuarios una plataforma eficiente y segura para realizar operaciones financieras. Gracias a la integración de NetBeans y MySQL Workbench, se ha creado una solución robusta que no solo simula las operaciones básicas de un cajero automático real, sino que también garantiza la privacidad y seguridad de las transacciones a través del uso de un número único de tarjeta y clave personal.
