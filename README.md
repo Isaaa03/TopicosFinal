@@ -25,9 +25,12 @@ Objetivos específicos
 
 ##Validaciones de campos requeridos: 
 Para nuestro sistema que simula ser un cajero es necesario contar con validaciones desde un inicio tenemos lo que es el login que es la interfaz principal en donde nuestro usuario ingresa su numero de tarjeta y clave para poder acceder.
+
 ![image](https://github.com/user-attachments/assets/edf8f56b-1819-4891-9881-345e59d4160b)
 
+
 En esta interfaz contamos con las validaciones para los números de tarjetas solo acepta un total de 16 dígitos y solo números. Lo mismo con la clave solo acepta un total de 4 dígitos y solo números. Para poder acceder es necesario tener ambos campos rellenados.  
+
 ![image](https://github.com/user-attachments/assets/c987eda4-ca4d-4e93-840e-46e187521505)
 
 
@@ -38,6 +41,7 @@ Contamos con otras interfaces en donde es necesario igual contar con validacione
 
 Las validaciones en esta son para los campos de cantidad, correo, descripción y numero de cuenta en donde ocupamos ciertas validaciones como los son que solo acepte números para cantidad y no acepte números para correo, descripción. 
 Tanto depósito, pago de servicio y retiro cuentas con las mismas validaciones.
+
 ![image](https://github.com/user-attachments/assets/3d37c8d9-155e-44bb-9c9f-a8a7b260a78d)
 
 ![image](https://github.com/user-attachments/assets/6c84d887-7258-496c-91c3-7efdd58d5064)
@@ -47,29 +51,37 @@ Tanto depósito, pago de servicio y retiro cuentas con las mismas validaciones.
 Para la gestión de usuarios contamos con una interfaza en donde podemos añadir mas usuarios a nuestra BD haciendo mas funcional y mejor el registro de nuevos usuarios. 
 
 ![image](https://github.com/user-attachments/assets/75d1b967-f1de-405f-a1e2-423ff29cbac7)
+
 En esta interfaz podemos añadir mas usuarios, para agregar mas es necesario rellenas cada uno de los apartados para poder hacer un registro adecuado a lo igual que podemos eliminar el usuario en caso de ser necesario. 
 
 ##Conexión a base de datos y uso de MVC: 
 La conexión a la base de datos se hizo utilizando MySQL Workbech en donde se diseño y relleno. 
+
 ![image](https://github.com/user-attachments/assets/2738a192-b151-4e88-a955-f88328a38516)
 
 ![image](https://github.com/user-attachments/assets/637ef4d9-9d96-4256-b76c-a4eb966abc8e)
 ![image](https://github.com/user-attachments/assets/5c744ddb-f913-4648-97d8-ae78019ca267)
 ![image](https://github.com/user-attachments/assets/fcec4201-a4a4-4205-aae1-813368b3fca4)
+
 La conexión a la base de datos fue a través de la clase clsBD_Conexion para esta es necesaria contar con el URL que nos proporciona workbench, el usuario y la contraseña de nuestro usuario. Por defecto el usuario es root y la contraseña la ponemos nosotros. 
+
 ![image](https://github.com/user-attachments/assets/c73213a5-7596-4f9c-9af8-3d433885fc8f)
+
 En esta clase contamos con lo que es un método para realizar la conexión, desconectar la conexión y un método get para obtener la conexión. 
 
 
 Tenemos la clase main en donde se comprueba si la conexión a nuestra base de datos fue exitosa o hubo algún error. 
+
 ![image](https://github.com/user-attachments/assets/df59d3bc-343d-4fc9-a83d-b2d1d215983b)
 
 ##Uso del componente:
 En este proyecto es necesario realizar comprobantes cuando se gestiona un depósito, retiro o pago de servicio para lo cual utilizamos como componente para nuestro proyecto un botón para realizar PDF que se presento por nuestro equipo en la clase. 
 Presentación del método del componente que usamos: 
+
 ![image](https://github.com/user-attachments/assets/fd04b299-1ba4-44c5-8c03-48c2f3e4a6db)
 ![image](https://github.com/user-attachments/assets/070e2342-a147-49cf-93ad-e0e3f0fed289)
 Explicación del código adaptado para el PDF: 
+
 El método tiene como objetivo permitir la creación de comprobantes de depósito personalizados en formato PDF con un diseño optimizado para impresión en tamaño de ticket (80mm x 200mm). Este método incluye validación de campos, incorporación de imágenes, formato de texto y apertura automática del archivo generado.
 
 ##Adición de Contenido al PDF:
